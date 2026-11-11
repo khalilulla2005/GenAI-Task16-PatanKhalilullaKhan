@@ -1,0 +1,27 @@
+============================================================
+TASK 6 : RANDOM FOREST (an example of Bagging)
+============================================================
+
+Model comparison (test accuracy):
+  Single Decision Tree  : 0.9333
+  Bagging Classifier    : 0.9667
+  Random Forest         : 0.9000
+
+>>> RESULT: best model on this 30-sample test split = Bagging Classifier
+
+Robust comparison using 5-fold cross-validation (mean +/- std):
+  Single Decision Tree  : 0.9533 (+/- 0.0267)
+  Bagging Classifier    : 0.9533 (+/- 0.0267)
+  Random Forest         : 0.9600 (+/- 0.0249)
+
+>>> RESULT: best model by cross-validation = Random Forest
+    A single tree has high variance; bagging/forest average many
+    trees -> more stable and usually better on unseen data.
+Saved plot -> plots/task6_model_comparison.png
+
+Random Forest feature importance (most -> least important):
+  petal width (cm)    : 0.4372
+  petal length (cm)   : 0.4315
+  sepal length (cm)   : 0.1163
+  sepal width (cm)    : 0.0150
+Saved plot -> plots/task6_feature_importance.png

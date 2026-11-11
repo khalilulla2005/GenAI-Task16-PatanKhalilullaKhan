@@ -1,0 +1,14 @@
+============================================================
+TASK 5 : BAGGING vs BOOSTING
+============================================================
+
+Concept:
+  Bagging  -> parallel  models on bootstrap samples -> majority vote (cuts variance)
+  Boosting -> sequential models fixing past mistakes  -> weighted vote (cuts bias)
+
+BaggingClassifier: test accuracy = 0.9667
+
+AdaBoostClassifier: test accuracy = 0.9333
+
+>>> RESULT: better performer on this dataset = BaggingClassifier
+Saved plot -> plots/task5_bagging_vs_boosting.png

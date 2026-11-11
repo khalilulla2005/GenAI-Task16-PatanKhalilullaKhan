@@ -1,0 +1,23 @@
+============================================================
+TASK 3 : TRAIN / VALIDATION / TEST SPLIT
+============================================================
+Train size : 90  (60%)
+Valid size : 30  (20%)
+Test  size : 30  (20%)
+
+Validation tuning table:
+ max_depth  train_accuracy  validation_accuracy
+         1          0.6667               0.6667
+         2          0.9667               0.9000
+         3          0.9778               0.9667
+         4          0.9889               0.9667
+         5          1.0000               0.9667
+         6          1.0000               0.9667
+         7          1.0000               0.9667
+         8          1.0000               0.9667
+         9          1.0000               0.9667
+        10          1.0000               0.9667
+
+>>> Best max_depth chosen by VALIDATION set: 3
+>>> FINAL MODEL (max_depth=3)  TEST accuracy: 1.0000
+Saved plot -> plots/task3_validation_curve.png

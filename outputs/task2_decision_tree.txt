@@ -1,0 +1,18 @@
+============================================================
+TASK 2 : DECISION TREE (underfit vs overfit)
+============================================================
+Saved plot -> plots/task2_tree_structure.png
+
+Train vs Test accuracy for different max_depth values:
+  max_depth  train_accuracy  test_accuracy
+          1          0.6667         0.6667
+          2          0.9667         0.9333
+          3          0.9833         0.9667
+          5          1.0000         0.9333
+          8          1.0000         0.9333
+full (None)          1.0000         0.9333
+
+Observation:
+ * max_depth=1  -> UNDERFITTING : low train AND test accuracy (too simple)
+ * full tree    -> OVERFITTING  : train accuracy ~1.000 but test accuracy drops
+Saved plot -> plots/task2_underfit_overfit.png
